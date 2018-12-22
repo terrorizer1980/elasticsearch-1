@@ -50,11 +50,11 @@ If you do not already have an `/opt/senzing` directory on your local system, vis
 1. Copy G2 engine jar file into your maven repository.
 
     ```console
-    cd ${GIT_ACCOUNT_DIR}/elasticsearch/search_api
+    cd ${GIT_REPOSITORY_DIR}/search_api
 
     mvn \
       install:install-file \
-      -Dmaven.repo.local=${GIT_ACCOUNT_DIR}/elasticsearch/search_api/maven_resources \
+      -Dmaven.repo.local=${GIT_REPOSITORY_DIR}/search_api/maven_resources \
       -Dfile=${SENZING_DIR}/g2/lib/g2.jar \
       -DgroupId=com.senzing \
       -DartifactId=g2 \
@@ -65,10 +65,10 @@ If you do not already have an `/opt/senzing` directory on your local system, vis
 1. Build the interface for ElasticSearch.
 
     ```console
-    cd ${GIT_ACCOUNT_DIR}/elasticsearch/search_api
+    cd ${GIT_REPOSITORY_DIR}/search_api
 
     mvn \
-      -Dmaven.repo.local=${GIT_ACCOUNT_DIR}/elasticsearch/search_api/maven_resources \
+      -Dmaven.repo.local=${GIT_REPOSITORY_DIR}/search_api/maven_resources \
       install
     ````
 
@@ -79,7 +79,7 @@ If you do not already have an `/opt/senzing` directory on your local system, vis
     cd ${SENZING_DIR}/g2/elasticsearch
 
     sudo cp \
-      ${GIT_ACCOUNT_DIR}/elasticsearch/search_api/target/g2elasticsearch-1.0.0-SNAPSHOT.jar \
+      ${GIT_REPOSITORY_DIR}/search_api/target/g2elasticsearch-1.0.0-SNAPSHOT.jar \
       ${SENZING_DIR}/g2/elasticsearch/g2elasticsearch.jar
     ```
 
