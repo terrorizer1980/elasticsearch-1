@@ -1,8 +1,8 @@
-# Senzing with ElasticSearch
+# Senzing with ElasticSearch (PROTOTYPE)
 
 ## Overview
 
-This code project demonstrates how the G2 engine may be used with an ElasticSearch indexing engine.  ElasticSearch provides enhanced searching capabilities on entity data.  
+This code project demonstrates how the G2 engine may be used with an ElasticSearch indexing engine.  ElasticSearch provides enhanced searching capabilities on entity data.  This project is currently in the prototype stage and the APIs and functionality are expected to change significantly.
 
 The G2 data repository contains data records and observations about known entities.  It determines which records match/merge to become single resolved entities.  These resolved entities can be indexed through the ElasticSearch engine, to provide more searchable data entities.
 
