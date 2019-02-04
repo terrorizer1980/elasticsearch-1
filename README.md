@@ -437,7 +437,7 @@ Search response:
 
 ### Look-ahead Example
 
-Lookahead query: `"ROB"`
+Lookahead query: `"Ra"`
 
 Lookahead response:
 
